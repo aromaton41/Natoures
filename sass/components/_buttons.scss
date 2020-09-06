@@ -55,6 +55,15 @@
     }
   }
 
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   &::after {
     content: "";
     display: inline-block;
@@ -109,7 +118,7 @@
     -moz-transform: translate(-2px);
     -ms-transform: translate(-2px);
     -o-transform: translate(-2px);
-}
+  }
   &:active {
     box-shadow: 0 1rem 0.5rem rgba($color-black, 0.15);
     transform: translateY(0);
@@ -117,5 +126,5 @@
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
-}
+  }
 }
