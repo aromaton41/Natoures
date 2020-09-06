@@ -16,7 +16,7 @@
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
     position: relative;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
   }
 
   &:hover {
@@ -83,4 +83,39 @@
     animation-delay: 0.75s;
     animation-fill-mode: backwards;
   }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding: 3px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+  }
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    transform: translate(-2px);
+    -webkit-transform: translate(-2px);
+    -moz-transform: translate(-2px);
+    -ms-transform: translate(-2px);
+    -o-transform: translate(-2px);
+}
+  &:active {
+    box-shadow: 0 1rem 0.5rem rgba($color-black, 0.15);
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
 }
