@@ -21,6 +21,10 @@
 1800px + : Big desktop
 */
 
+// order: Base + typography > general layout + grid > page layout > components
+
+// 1em = 16 px
+
 @mixin respond-phone {
   @media (max-width: 600px) {
     @content;
